@@ -1,16 +1,46 @@
-<html>
-    <head>
-        <title>Degree Equation</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href ="style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Quadratic Equation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <h2>Second Degree Equations</h2>
+        <h3>Quadratic Equation:
+                <span id="a">a</span>x
+                <sup>2</sup> +
+                <span id="b">b</span>x +
+                <span id="c">c</span>
+            </h3>
+      
+    <div class="row">
 
+      <!--find roots-->
+      <div class=" col-sm-8 col-10 border1 content1"id="result">
+        <p><i>Solve Your Quadratic Equation here</p>
+        <form>
+          <div class="form-group">
+            <label for="a"><strong class="strong1">a</strong>x<sup>2</sup>+bx+c</label>
+            <input type="text" class="form-control" id="a"  placeholder="please enter the cofficant of x">
+          </div>
+          <div class="form-group">
+            <label for="b">ax<sup>2</sup>+<strong class="strong1">b</strong>x+c</label>
+            <input type="text" class="form-control" id="b"  placeholder="please enter the cofficant of y">
+          </div>
+          <div class="form-group">
+            <label for="c">ax<sup>2</sup>+bx+<strong class="strong1">c</strong></label>
+            <input type="text" class="form-control" id="c" placeholder="please enter the constant value">
+          </div>
+          <button type="submit" class="btn btn-outline-dark" onclick="caluateRoots()">Find the roots</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-
-        <script src ="main.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+  <script src="main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
 </html>
